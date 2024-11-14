@@ -29,13 +29,13 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB   |  1   |  2  |  3  |  4  |  5  |     |  6  |  7  | 8   |  9  |  0   | BT CLR |
-// | CTRL  | USB/BT |  trans | BT PRV | BT NXT | Mute|     | LFT | DWN | UP  | RGT | F11  | F12  |
+// | TAB   |  1   |  2  |  3  |  4  |  5  |     |  6  |  7  | 8   |  9  |  0   | BSPC |
+// | CTRL  | USB |  BLE | BT PRV | BT NXT | Mute|     | LFT | DWN | UP  | RGT | F11  | F12  |
 // | SHIF  | F1   |  F2 | F3  | F4  | F5  |     | F6  | F7  | F8  | F9  | F10  | ESC  |     
 //                      | GUI |     | SPC |     | ENT |  L0 | ALT |
                         bindings = <
-    &kp TAB      &kp N1       &kp N2         &kp N3       &kp N4             &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0   &bt BT_CLR
-    &kp LCTRL    &out OUT_USB &out OUT_BLE  &bt BT_PRV   &bt BT_NXT         &kp C_MUTE     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F11  &kp F12
+    &kp TAB      &kp N1       &kp N2         &kp N3       &kp N4             &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0   &kp BSPC 
+    &kp LCTRL    &out OUT_USB &out OUT_BLE   &bt BT_PRV   &bt BT_NXT         &kp C_MUTE     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp F11  &kp F12
     &kp LSHFT    &kp F1       &kp F2         &kp F3       &kp F4             &kp F5         &kp F6   &kp F7   &kp F8 &kp F9    &kp F10  &kp ESC
                                              &kp LGUI     &trans             &kp SPACE      &kp RET  &trans   &kp LALT
                         >;
@@ -46,12 +46,12 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL  |
 // | CTRL | CL  | INS | PS  | HOME| PUP |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT | SL  | MENU | DEL | END | PD  |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// | SHFT | SL  | BT CLR | DEL | END | PD  |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |  L0 | ALT |
                         bindings = <
    &kp TAB    &kp EXCL        &kp AT       &kp HASH         &kp DLLR  &kp PRCNT        &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp DELETE
    &kp LCTRL  &kp CLCK        &kp INS      &kp PRINTSCREEN  &kp HOME  &kp PAGE_UP      &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-   &kp LSHFT  &kp SCROLLLOCK  &kp C_MENU   &kp DELETE  &kp END   &kp PAGE_DOWN    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+   &kp LSHFT  &kp SCROLLLOCK  &bt BT_CLR   &kp DELETE  &kp END   &kp PAGE_DOWN    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                            &kp LGUI         &trans    &kp SPACE        &kp RET    &trans     &kp LALT
                         >;
                 };
