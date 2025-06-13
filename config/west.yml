@@ -16,9 +16,13 @@ manifest:
       import: app/west.yml
 
     # support nice_oled and nice_epaper
-    - name: zmk-nice-oled
+    # - name: zmk-nice-oled
+    #   remote: mctechnology17
+    #   revision: main    
+     
+    - name: zmk-oled-adapter
       remote: mctechnology17
-      revision: main    
+      revision: main
 
   self:
     path: config

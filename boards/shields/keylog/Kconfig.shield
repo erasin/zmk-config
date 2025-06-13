@@ -1,8 +1,0 @@
-config SHIELD_KEYLOG_LEFT
-    def_bool $(shields_list_contains,keylog_left)
-
-config SHIELD_KEYLOG_RIGHT
-    def_bool $(shields_list_contains,keylog_right)
-
-config SHIELD_KEYLOG
-    def_bool $(shields_list_contains,keylog)

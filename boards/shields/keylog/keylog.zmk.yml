@@ -1,5 +1,0 @@
-name: "keylog"
-board: []
-shield: []
-description: |
-  Shield for Corne keyboards using SSD1306 128x32 OLED display over I2C.
