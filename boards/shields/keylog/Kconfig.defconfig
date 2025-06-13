@@ -1,0 +1,9 @@
+if SHIELD_KEYLOG
+
+config DISPLAY
+    default y
+
+config DISPLAY_INIT_PRIORITY
+    default 90
+
+endif

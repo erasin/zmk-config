@@ -1,0 +1,15 @@
+&i2c1 {
+    status = "okay";
+    ssd1306: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        width = <128>;
+        height = <32>;
+        segment-offset = <0>;
+        page-offset = <0>;
+        display-offset = <0>;
+        rotation = <0>;
+        label = "SSD1306";
+        // reset-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>; // 如有RST脚可取消注释
+    };
+};
